@@ -1,0 +1,64 @@
+body {
+    background-color: grey;
+  }
+  
+  .container {
+    position: absolute;
+    background-color: #000;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  
+  .container-left {
+    left: -500px;
+  }
+  
+  .container-right {
+    left: 500px;
+  }
+  
+  .sclera {
+    position: absolute;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    left: 10%;
+    top: 10%;
+    border-radius: 50%;
+  }
+  
+  .iris {
+    position: absolute;
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    left: 25%;
+    top: 25%;
+    border-radius: 50%;
+    animation-name: look;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  .pupil {
+    position: absolute;
+    background-color: #000;
+    height: 100px;
+    width: 100px;
+    top: 25%;
+    left: 25%;
+    border-radius: 50%;
+  }
+  
+  @keyframes look {
+    33% {
+      left: 35%;
+    }
+    66% {
+      left: 15%;
+    }
+  }
